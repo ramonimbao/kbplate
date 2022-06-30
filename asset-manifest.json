@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/yet-another-keyboard-builder/static/css/main.8dcea9d8.css",
-    "main.js": "/yet-another-keyboard-builder/static/js/main.d40c325c.js",
-    "static/media/logo.png": "/yet-another-keyboard-builder/static/media/logo.111b0e8963b731411cfd.png",
-    "index.html": "/yet-another-keyboard-builder/index.html",
-    "main.8dcea9d8.css.map": "/yet-another-keyboard-builder/static/css/main.8dcea9d8.css.map",
-    "main.d40c325c.js.map": "/yet-another-keyboard-builder/static/js/main.d40c325c.js.map"
+    "main.css": "/kbplate/static/css/main.8dcea9d8.css",
+    "main.js": "/kbplate/static/js/main.fa5f77a5.js",
+    "static/media/logo.png": "/kbplate/static/media/logo.111b0e8963b731411cfd.png",
+    "index.html": "/kbplate/index.html",
+    "main.8dcea9d8.css.map": "/kbplate/static/css/main.8dcea9d8.css.map",
+    "main.fa5f77a5.js.map": "/kbplate/static/js/main.fa5f77a5.js.map"
   },
   "entrypoints": [
     "static/css/main.8dcea9d8.css",
-    "static/js/main.d40c325c.js"
+    "static/js/main.fa5f77a5.js"
   ]
 }
