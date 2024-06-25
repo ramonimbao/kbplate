@@ -10,6 +10,8 @@ import { SwitchOmronB3G } from './cutouts/SwitchOmronB3G'
 import { SwitchHiTek725 } from './cutouts/SwitchHiTek725'
 import { SwitchIRocks } from './cutouts/SwitchIRocks'
 import { SwitchPCBMXOnly } from './cutouts/SwitchPCBMXOnly'
+import { SwitchTopre } from './cutouts/SwitchTopre'
+import { SwitchDeskeys } from './cutouts/SwitchDeskeys'
 
 import { StabilizerMXBasic } from './cutouts/StabilizerMXBasic'
 import { StabilizerMXSmall } from './cutouts/StabilizerMXSmall'
@@ -17,6 +19,8 @@ import { StabilizerMXSpec } from './cutouts/StabilizerMXSpec'
 import { StabilizerAlpsAEK } from './cutouts/StabilizerAlpsAEK'
 import { StabilizerAlpsAT101 } from './cutouts/StabilizerAlpsAT101'
 import { StabilizerPCBMX } from './cutouts/StabilizerPCBMX'
+import { StabilizerTopre } from './cutouts/StabilizerTopre'
+import { StabilizerDeskeys } from './cutouts/StabilizerDeskeys'
 import { NullGenerator } from './cutouts/NullGenerator'
 
 import { AcousticMXBasic } from './cutouts/AcousticMXBasic'
@@ -64,6 +68,12 @@ export function buildPlate(keysArray, generatorOptions) {
         case "pcb-mx-only":
             switchGenerator = new SwitchPCBMXOnly();
             break;
+        case "topre":
+            switchGenerator = new SwitchTopre();
+            break;
+        case "deskeys":
+            switchGenerator = new SwitchDeskeys();
+            break;
         default:
             console.error("Unsupported switch type")
             return null
@@ -89,6 +99,12 @@ export function buildPlate(keysArray, generatorOptions) {
         case "pcb-mx":
             stabilizerGenerator = new StabilizerPCBMX();
             break;
+        case "topre":
+            stabilizerGenerator = new StabilizerTopre();
+            break;
+        case "deskeys":
+                stabilizerGenerator = new StabilizerDeskeys();
+                break;
         case "none":
             stabilizerGenerator = new NullGenerator();
             break;
