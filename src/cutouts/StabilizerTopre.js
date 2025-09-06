@@ -34,6 +34,9 @@ export class StabilizerTopre extends CutoutGenerator {
                 stab_spacing_left = stab_spacing_right = new Decimal("47.625")
             }
         }
+        else if (keySize.gte(4.5)) {
+            stab_spacing_left = stab_spacing_right = new Decimal("34.67")
+        }
         else if (keySize.gte(3)) {
             stab_spacing_left = stab_spacing_right = new Decimal("19.05")
         }
