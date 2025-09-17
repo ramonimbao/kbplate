@@ -15,6 +15,7 @@ import { SwitchDeskeys } from './cutouts/SwitchDeskeys'
 import { SwitchMX5mm } from './cutouts/SwitchMX5mm'
 
 import { StabilizerMXBasic } from './cutouts/StabilizerMXBasic'
+import { StabilizerMX5mm } from './cutouts/StabilizerMX5mm'
 import { StabilizerMXSmall } from './cutouts/StabilizerMXSmall'
 import { StabilizerMXSpec } from './cutouts/StabilizerMXSpec'
 import { StabilizerAlpsAEK } from './cutouts/StabilizerAlpsAEK'
@@ -87,6 +88,9 @@ export function buildPlate(keysArray, generatorOptions) {
     switch (generatorOptions.stabilizerCutoutType) {
         case "mx-basic":
             stabilizerGenerator = new StabilizerMXBasic();
+            break;
+        case 'mx-5mm':
+            stabilizerGenerator = new StabilizerMX5mm();
             break;
         case "mx-small":
             stabilizerGenerator = new StabilizerMXSmall();

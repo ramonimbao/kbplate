@@ -162,6 +162,7 @@ function App() {
                   onChange={e => setStabilizerCutoutType(e.target.value)}
                 >
                   <option value="mx-basic">Cherry MX Basic</option>
+                  <option value="mx-5mm">Cherry MX (5mm)</option>
                   <option value="mx-small">Cherry MX Tight Fit</option>
                   <option value="mx-spec">Cherry MX Spec</option>
                   <option value="alps-aek">Alps AEK</option>
