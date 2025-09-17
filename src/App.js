@@ -142,6 +142,7 @@ function App() {
                   onChange={e => setSwitchCutoutType(e.target.value)}
                 >
                   <option value="mx-basic">Cherry MX Basic</option>
+                  <option value="mx-5mm">Cherry MX (5mm)</option>
                   <option value="alps-skcm">Alps SKCM/L</option>
                   <option value="choc-cpg1350">Kailh Choc CPG1350</option>
                   <option value="choc-cpg1232">Kailh Mini Choc CPG1232</option>

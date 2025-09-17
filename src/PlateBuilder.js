@@ -12,6 +12,7 @@ import { SwitchIRocks } from './cutouts/SwitchIRocks'
 import { SwitchPCBMXOnly } from './cutouts/SwitchPCBMXOnly'
 import { SwitchTopre } from './cutouts/SwitchTopre'
 import { SwitchDeskeys } from './cutouts/SwitchDeskeys'
+import { SwitchMX5mm } from './cutouts/SwitchMX5mm'
 
 import { StabilizerMXBasic } from './cutouts/StabilizerMXBasic'
 import { StabilizerMXSmall } from './cutouts/StabilizerMXSmall'
@@ -73,6 +74,9 @@ export function buildPlate(keysArray, generatorOptions) {
             break;
         case "deskeys":
             switchGenerator = new SwitchDeskeys();
+            break;
+        case "mx-5mm":
+            switchGenerator = new SwitchMX5mm();
             break;
         default:
             console.error("Unsupported switch type")
