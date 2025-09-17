@@ -49,8 +49,8 @@ export class StabilizerMX5mm extends CutoutGenerator {
 
         const width = new Decimal("7")
         const upperBound = new Decimal("9.75")
-        const upperWire = new Decimal("-6.8")
-        const lowerWire = new Decimal("-10.4")
+        const upperWire = new Decimal("-10.4")
+        const lowerWire = new Decimal("-6.8")
 
         const plusHalfWidth = width.dividedBy(new Decimal("2"))
         const minsHalfWidth = width.dividedBy(new Decimal("-2"))
