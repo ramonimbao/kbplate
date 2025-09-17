@@ -4,7 +4,7 @@ import { CutoutGenerator } from './CutoutGenerator'
 
 // Basic MX stabilizer cutout
 
-export class StabilizerMXBasic extends CutoutGenerator {
+export class StabilizerMX5mm extends CutoutGenerator {
 
     generate(key, generatorOptions) {
 
