@@ -41,22 +41,25 @@ export class SwitchTopre extends CutoutGenerator {
 
         let keySize = key.width;
 
-        var model = {};
-        if (keySize.gte(2) && keySize.lt(3)) {
-            model = {
-                paths: {}
+        var model = {
+            paths: {
+                lineAB: new makerjs.paths.Line(pointA, pointB),
+                lineBC: new makerjs.paths.Line(pointB, pointC),
+                lineCD: new makerjs.paths.Line(pointC, pointD),
+                lineDE: new makerjs.paths.Line(pointD, pointE),
+                lineEF: new makerjs.paths.Line(pointE, pointF),
+                lineFG: new makerjs.paths.Line(pointF, pointG),
+                lineGH: new makerjs.paths.Line(pointG, pointH),
+                lineHA: new makerjs.paths.Line(pointH, pointA)
             }
-        } else {
-            model = {
-                paths: {
-                    lineAB: new makerjs.paths.Line(pointA, pointB),
-                    lineBC: new makerjs.paths.Line(pointB, pointC),
-                    lineCD: new makerjs.paths.Line(pointC, pointD),
-                    lineDE: new makerjs.paths.Line(pointD, pointE),
-                    lineEF: new makerjs.paths.Line(pointE, pointF),
-                    lineFG: new makerjs.paths.Line(pointF, pointG),
-                    lineGH: new makerjs.paths.Line(pointG, pointH),
-                    lineHA: new makerjs.paths.Line(pointH, pointA)
+        };
+        if (keySize.gte(2) && keySize.lt(3)) {
+            if (!(generatorOptions.stabilizerCutoutType == "mx-basic"
+                || generatorOptions.stabilizerCutoutType == "mx-5mm"
+                || generatorOptions.stabilizerCutoutType == "mx-small"
+                || generatorOptions.stabilizerCutoutType == "mx-spec")) {
+                model = {
+                    paths: {}
                 }
             }
         }
