@@ -8,6 +8,7 @@ import fileDownload from 'js-file-download'
 import logo from './logo.png'
 import { DataHelpPane, SwitchCutoutPane, OtherCutoutPane, AdvancedPane, AboutPane } from './HelpPanes'
 
+// const makerjs = await import('makerjs');
 
 function App() {
 
